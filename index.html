@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategy Map: Holistische Waardecreatie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #f8fafc;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+        .perspective-lane {
+            transition: all 0.3s ease;
+        }
+        .node {
+            transition: all 0.2s ease;
+            cursor: pointer;
+            position: relative;
+        }
+        .node:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .arrow-up {
+            width: 0; 
+            height: 0; 
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid #cbd5e1;
+            margin: 0 auto;
+        }
+        .line {
+            width: 2px;
+            height: 20px;
+            background-color: #cbd5e1;
+            margin: 0 auto;
+        }
+        .highlight {
+            border-color: #3b82f6 !important;
+            background-color: #eff6ff !important;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto">
+        <header class="mb-10 text-center">
+            <h1 class="text-3xl font-bold text-slate-800 mb-2">Strategy Map: Van Data naar Waarde</h1>
+            <p class="text-slate-600 italic">Visualisatie van de oorzaak-gevolg relaties binnen het adviestraject</p>
+        </header>
+
+        <!-- PERSPECTIEF 4: MEERVOUDIGE WAARDE -->
+        <div class="mb-12">
+            <div class="flex items-center mb-4">
+                <span class="bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold mr-3 uppercase tracking-wider">Impact</span>
+                <h2 class="text-xl font-bold text-slate-700">Holistische Waarde (Six Capitals)</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="node bg-white border-2 border-purple-100 p-4 rounded-xl shadow-sm" onclick="showInfo('Intellectual Capital', 'De waarde van de unieke adviesmethodiek en kennis binnen het kantoor wordt gemaximaliseerd.')">
+                    <h3 class="font-bold text-purple-800 mb-1">Intellectueel Kapitaal</h3>
+                    <p class="text-xs text-slate-500 italic">Unieke advieskracht</p>
+                </div>
+                <div class="node bg-white border-2 border-purple-100 p-4 rounded-xl shadow-sm" onclick="showInfo('Social Capital', 'Sterke vertrouwensband met de klant door diepgaand inzicht in hun business.')">
+                    <h3 class="font-bold text-purple-800 mb-1">Sociaal Kapitaal</h3>
+                    <p class="text-xs text-slate-500 italic">Klantvertrouwen & Relatie</p>
+                </div>
+                <div class="node bg-white border-2 border-purple-100 p-4 rounded-xl shadow-sm" onclick="showInfo('Human Capital Value', 'Gezond werkklimaat met uitgedaagde, zelfverzekerde professionals.')">
+                    <h3 class="font-bold text-purple-800 mb-1">Menselijk Kapitaal</h3>
+                    <p class="text-xs text-slate-500 italic">Welzijn & Retentie</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div><div class="arrow-up rotate-180 mb-6"></div>
+
+        <!-- PERSPECTIEF 3: KLANTWAARDE -->
+        <div class="mb-12">
+            <div class="flex items-center mb-4">
+                <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold mr-3 uppercase tracking-wider">Klant</span>
+                <h2 class="text-xl font-bold text-slate-700">Klant- & Adviesperspectief</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="node bg-white border-2 border-blue-100 p-4 rounded-xl shadow-sm" onclick="showInfo('Begrijpelijke Rapportage', 'Klanten krijgen niet alleen cijfers, maar de context die ze nu missen.')">
+                    <h3 class="font-bold text-blue-800 mb-1">Contextrijk Inzicht</h3>
+                    <p class="text-sm text-slate-600 italic">"Ik begrijp wat deze cijfers voor mijn toekomst betekenen"</p>
+                </div>
+                <div class="node bg-white border-2 border-blue-100 p-4 rounded-xl shadow-sm" onclick="showInfo('Pro-actief Advies', 'De accountant is een partner die meedenkt voordat de klant erom vraagt.')">
+                    <h3 class="font-bold text-blue-800 mb-1">Strategisch Partnerschap</h3>
+                    <p class="text-sm text-slate-600 italic">Transformatie van verwerker naar adviseur</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div><div class="arrow-up rotate-180 mb-6"></div>
+
+        <!-- PERSPECTIEF 2: INTERNE PROCESSEN -->
+        <div class="mb-12">
+            <div class="flex items-center mb-4">
+                <span class="bg-emerald-600 text-white px-3 py-1 rounded-full text-xs font-bold mr-3 uppercase tracking-wider">Proces</span>
+                <h2 class="text-xl font-bold text-slate-700">Operationele Excellentie</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="node bg-white border-2 border-emerald-100 p-4 rounded-xl shadow-sm" onclick="showInfo('Automatisering', 'Vervangen van Exact-naar-Excel handwerk door directe integraties naar Bizz Control.')">
+                    <h3 class="font-bold text-emerald-800 mb-1">Geautomatiseerde Dataflow</h3>
+                    <p class="text-sm text-slate-600">Eliminatie van handmatige pieken</p>
+                </div>
+                <div class="node bg-white border-2 border-emerald-100 p-4 rounded-xl shadow-sm" onclick="showInfo('Rapportage Snelheid', 'MIS output is direct beschikbaar na de periode, niet weken later.')">
+                    <h3 class="font-bold text-emerald-800 mb-1">Real-time Rapportage Cyclus</h3>
+                    <p class="text-sm text-slate-600">Tijdigheid als basis voor advies</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div><div class="arrow-up rotate-180 mb-6"></div>
+
+        <!-- PERSPECTIEF 1: LEREN & GROEI -->
+        <div class="mb-12">
+            <div class="flex items-center mb-4">
+                <span class="bg-amber-600 text-white px-3 py-1 rounded-full text-xs font-bold mr-3 uppercase tracking-wider">Basis</span>
+                <h2 class="text-xl font-bold text-slate-700">Grondslagen (Capitals)</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Human Capital -->
+                <div class="node bg-white border-2 border-amber-100 p-4 rounded-xl shadow-sm" onclick="showInfo('Menselijk Kapitaal', 'Focus op competenties en zelfvertrouwen om de adviesrol te pakken.')">
+                    <div class="text-amber-600 mb-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg></div>
+                    <h3 class="font-bold text-amber-800 mb-1">Menselijk (Human)</h3>
+                    <p class="text-xs text-slate-600 uppercase font-semibold">Competentie & Lef</p>
+                </div>
+                <!-- Information Capital -->
+                <div class="node bg-white border-2 border-amber-100 p-4 rounded-xl shadow-sm" onclick="showInfo('Informatie Kapitaal', 'Correcte inregeling van Bizz Control en datahygiëne in Exact.')">
+                    <div class="text-amber-600 mb-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg></div>
+                    <h3 class="font-bold text-amber-800 mb-1">Informatie (Info)</h3>
+                    <p class="text-xs text-slate-600 uppercase font-semibold">Geïntegreerd MIS</p>
+                </div>
+                <!-- Organization Capital -->
+                <div class="node bg-white border-2 border-amber-100 p-4 rounded-xl shadow-sm" onclick="showInfo('Organisatie Kapitaal', 'Een cultuur waarin pro-activiteit wordt aangemoedigd en werkdruk beheersbaar is.')">
+                    <div class="text-amber-600 mb-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg></div>
+                    <h3 class="font-bold text-amber-800 mb-1">Organisatie (Org)</h3>
+                    <p class="text-xs text-slate-600 uppercase font-semibold">Adviescultuur</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- DETAIL MODAL -->
+        <div id="detailBox" class="hidden bg-white border-l-4 border-blue-500 p-6 rounded-r shadow-lg mt-8 animate-pulse-once">
+            <h4 id="detailTitle" class="text-xl font-bold text-slate-800 mb-2">Selecteer een onderdeel</h4>
+            <p id="detailText" class="text-slate-600 leading-relaxed"></p>
+        </div>
+
+        <footer class="mt-20 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm">
+            <p>&copy; Adviestraject - Strategy Map Visualisatie</p>
+        </footer>
+    </div>
+
+    <script>
+        function showInfo(title, text) {
+            const detailBox = document.getElementById('detailBox');
+            const detailTitle = document.getElementById('detailTitle');
+            const detailText = document.getElementById('detailText');
+
+            detailBox.classList.remove('hidden');
+            detailTitle.innerText = title;
+            detailText.innerText = text;
+
+            // Scroll to detail box
+            detailBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    </script>
+</body>
+</html>
