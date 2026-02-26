@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uitleg: Strategy Maps & Six Capitals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #f1f5f9;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+        .section-card {
+            background: white;
+            border-radius: 1.25rem;
+            padding: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            border: 1px solid #e2e8f0;
+        }
+        .bridge-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+        }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+
+    <div class="max-w-6xl mx-auto">
+
+        <!-- NAVIGATIE TABS -->
+        <nav class="flex gap-2 mb-10">
+            <a href="index.html" class="px-5 py-2 rounded-full text-sm font-semibold text-slate-500 hover:text-slate-700 hover:bg-slate-200 transition-colors">Strategy Map</a>
+            <a href="explainer.html" class="px-5 py-2 rounded-full text-sm font-semibold bg-slate-800 text-white">Uitleg</a>
+        </nav>
+
+        <header class="mb-14 text-center">
+            <h1 class="text-4xl font-bold text-slate-800 tracking-tight mb-3">Strategy Maps uitgelegd</h1>
+            <p class="text-slate-500 text-lg">Van oorzaak-gevolg relaties naar een meetbaar managementdashboard</p>
+        </header>
+
+
+        <!-- SECTIE 1: WAT IS EEN STRATEGY MAP -->
+        <div class="section-card mb-10">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="bg-slate-700 text-white px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-widest">01</span>
+                <h2 class="text-2xl font-bold text-slate-800">Wat is een Strategy Map?</h2>
+            </div>
+
+            <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                Een strategy map is een visueel raamwerk dat laat zien hoe een organisatie waarde creëert. Het toont de <strong class="text-slate-800">oorzaak-gevolg relaties</strong> tussen strategische doelstellingen, verdeeld over vier perspectieven — van de organisatorische fundamenten onderaan tot de uiteindelijke impact bovenaan.
+            </p>
+
+            <p class="text-slate-600 text-lg leading-relaxed mb-8">
+                Het concept is ontwikkeld door Robert Kaplan en David Norton (Harvard Business School, 2004) als uitbreiding op de Balanced Scorecard. De logica is simpel: <em>sterke grondslagen</em> maken <em>betere processen</em> mogelijk, wat leidt tot meer <em>klantwaarde</em>, en uiteindelijk tot <em>duurzame impact</em>.
+            </p>
+
+            <!-- Vier perspectieven uitleg -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+                <div class="bg-purple-50 border border-purple-200 rounded-xl p-4">
+                    <span class="text-xs font-bold uppercase tracking-widest text-purple-600">Impact</span>
+                    <p class="font-semibold text-purple-800 mt-1 text-base">Financieel / Waarde</p>
+                    <p class="text-sm text-slate-500 mt-2">Wat levert de strategie op voor stakeholders en de maatschappij?</p>
+                </div>
+                <div class="bg-blue-50 border border-blue-200 rounded-xl p-4">
+                    <span class="text-xs font-bold uppercase tracking-widest text-blue-600">Klant</span>
+                    <p class="font-semibold text-blue-800 mt-1 text-base">Klantperspectief</p>
+                    <p class="text-sm text-slate-500 mt-2">Welke waarde bieden we klanten? Wat onderscheidt ons?</p>
+                </div>
+                <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
+                    <span class="text-xs font-bold uppercase tracking-widest text-emerald-600">Proces</span>
+                    <p class="font-semibold text-emerald-800 mt-1 text-base">Interne Processen</p>
+                    <p class="text-sm text-slate-500 mt-2">Welke processen moeten excelleren om de klantwaarde te realiseren?</p>
+                </div>
+                <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Basis</span>
+                    <p class="font-semibold text-amber-800 mt-1 text-base">Leren & Groei</p>
+                    <p class="text-sm text-slate-500 mt-2">Welke mensen, systemen en cultuur zijn de basis van alles?</p>
+                </div>
+            </div>
+
+            <figure class="mt-6">
+                <img src="background-docs/Integrated-Strategy-Map-from-Intrafocus.png"
+                     alt="Voorbeeld van een geïntegreerde Strategy Map (Intrafocus)"
+                     class="w-full rounded-xl shadow-md border border-slate-200" />
+                <figcaption class="text-sm text-slate-400 mt-3 text-center italic">
+                    Voorbeeld: een geïntegreerde Strategy Map met strategische doelstellingen, KPIs, targets en projecten (Intrafocus)
+                </figcaption>
+            </figure>
+        </div>
+
+
+        <!-- SECTIE 2: HET SIX CAPITALS MODEL -->
+        <div class="section-card mb-10">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="bg-slate-700 text-white px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-widest">02</span>
+                <h2 class="text-2xl font-bold text-slate-800">Het Six Capitals Model</h2>
+            </div>
+
+            <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                Het Six Capitals model van de IIRC (International Integrated Reporting Council) beschrijft hoe organisaties waarde creëren, bewaren of vernietigen over tijd. Elke organisatie verbruikt <strong class="text-slate-800">input capitals</strong>, voert <strong class="text-slate-800">business activities</strong> uit, en produceert daarmee <strong class="text-slate-800">output capitals</strong>.
+            </p>
+
+            <!-- Zes kapitalen -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-8">
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+                    <p class="font-semibold text-slate-700 text-base">Financieel Kapitaal</p>
+                    <p class="text-sm text-slate-500 mt-1">Fondsen beschikbaar voor productie</p>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+                    <p class="font-semibold text-slate-700 text-base">Geproduceerd Kapitaal</p>
+                    <p class="text-sm text-slate-500 mt-1">Fysieke infrastructuur en systemen</p>
+                </div>
+                <div class="bg-purple-50 border border-purple-200 rounded-xl p-4">
+                    <p class="font-semibold text-purple-800 text-base">Intellectueel Kapitaal</p>
+                    <p class="text-sm text-slate-500 mt-1">Kennis, methodieken, IP</p>
+                </div>
+                <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+                    <p class="font-semibold text-amber-800 text-base">Menselijk Kapitaal</p>
+                    <p class="text-sm text-slate-500 mt-1">Competenties, motivatie, leiderschapsvermogen</p>
+                </div>
+                <div class="bg-blue-50 border border-blue-200 rounded-xl p-4">
+                    <p class="font-semibold text-blue-800 text-base">Sociaal Kapitaal</p>
+                    <p class="text-sm text-slate-500 mt-1">Relaties, vertrouwen, netwerken</p>
+                </div>
+                <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
+                    <p class="font-semibold text-emerald-800 text-base">Natuurlijk Kapitaal</p>
+                    <p class="text-sm text-slate-500 mt-1">Milieu, grondstoffen, ecosystemen</p>
+                </div>
+            </div>
+
+            <figure>
+                <img src="background-docs/six-capitals.jpeg"
+                     alt="Het Six Capitals model van de IIRC"
+                     class="w-full rounded-xl shadow-md border border-slate-200" />
+                <figcaption class="text-sm text-slate-400 mt-3 text-center italic">
+                    Het Six Capitals model: input capitals stromen via het Business Model naar output capitals (IIRC)
+                </figcaption>
+            </figure>
+        </div>
+
+
+        <!-- SECTIE 3: DE SYNTHESE -->
+        <div class="section-card mb-10">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="bg-slate-700 text-white px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-widest">03</span>
+                <h2 class="text-2xl font-bold text-slate-800">De Synthese: Strategy Map = het Business Model</h2>
+            </div>
+
+            <p class="text-slate-600 text-lg leading-relaxed mb-8">
+                In het Six Capitals schema is het <strong class="text-slate-800">Business Model</strong> de zwarte doos in het midden: het omschrijft hoe een organisatie input capitals omzet in output capitals. Een strategy map maakt precies die zwarte doos transparant — het is een gedetailleerde beschrijving van <em>hoe</em> die transformatie werkt.
+            </p>
+
+            <!-- Visuele brug: Six Capitals ↔ Strategy Map lagen -->
+            <div class="bg-slate-50 rounded-2xl p-6 mb-8 border border-slate-200">
+                <h3 class="font-bold text-slate-700 text-base mb-5 uppercase tracking-wide text-center">Hoe de vier perspectieven passen in het Six Capitals model</h3>
+
+                <!-- Input -->
+                <div class="mb-2">
+                    <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2 text-center">Input Capitals</p>
+                    <div class="grid grid-cols-3 gap-3">
+                        <div class="bg-amber-100 border border-amber-200 rounded-xl p-3 text-center">
+                            <p class="text-xs font-bold text-amber-700 uppercase">Menselijk Kapitaal</p>
+                            <p class="text-xs text-slate-500 mt-1">Competenties & lef</p>
+                        </div>
+                        <div class="bg-amber-100 border border-amber-200 rounded-xl p-3 text-center">
+                            <p class="text-xs font-bold text-amber-700 uppercase">Informatie Kapitaal</p>
+                            <p class="text-xs text-slate-500 mt-1">Systemen & data</p>
+                        </div>
+                        <div class="bg-amber-100 border border-amber-200 rounded-xl p-3 text-center">
+                            <p class="text-xs font-bold text-amber-700 uppercase">Organisatie Kapitaal</p>
+                            <p class="text-xs text-slate-500 mt-1">Cultuur & leiderschap</p>
+                        </div>
+                    </div>
+                    <p class="text-center text-xs text-amber-600 font-semibold mt-2">= Perspectief Leren & Groei (Basis)</p>
+                </div>
+
+                <!-- Pijl omlaag -->
+                <div class="text-center text-2xl text-slate-300 my-3">↓</div>
+
+                <!-- Business Activities -->
+                <div class="mb-2">
+                    <div class="bg-emerald-100 border border-emerald-200 rounded-xl p-4 text-center">
+                        <p class="text-xs font-bold text-emerald-700 uppercase tracking-wide">Business Activities</p>
+                        <p class="font-semibold text-emerald-900 mt-1">Operationele & strategische processen</p>
+                        <p class="text-xs text-slate-500 mt-1">Automatisering · rapportagecyclus · innovatie · klantbeheer</p>
+                    </div>
+                    <p class="text-center text-xs text-emerald-600 font-semibold mt-2">= Perspectief Interne Processen</p>
+                </div>
+
+                <!-- Pijl omlaag -->
+                <div class="text-center text-2xl text-slate-300 my-3">↓</div>
+
+                <!-- Outputs -->
+                <div class="mb-2">
+                    <div class="bg-blue-100 border border-blue-200 rounded-xl p-4 text-center">
+                        <p class="text-xs font-bold text-blue-700 uppercase tracking-wide">Outputs</p>
+                        <p class="font-semibold text-blue-900 mt-1">Waarde geleverd aan klanten</p>
+                        <p class="text-xs text-slate-500 mt-1">Contextrijk inzicht · strategisch partnerschap</p>
+                    </div>
+                    <p class="text-center text-xs text-blue-600 font-semibold mt-2">= Perspectief Klant</p>
+                </div>
+
+                <!-- Pijl omlaag -->
+                <div class="text-center text-2xl text-slate-300 my-3">↓</div>
+
+                <!-- Output Capitals -->
+                <div>
+                    <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2 text-center">Output Capitals (Outcomes)</p>
+                    <div class="grid grid-cols-3 gap-3">
+                        <div class="bg-purple-100 border border-purple-200 rounded-xl p-3 text-center">
+                            <p class="text-xs font-bold text-purple-700 uppercase">Intellectueel</p>
+                            <p class="text-xs text-slate-500 mt-1">Advieskracht</p>
+                        </div>
+                        <div class="bg-purple-100 border border-purple-200 rounded-xl p-3 text-center">
+                            <p class="text-xs font-bold text-purple-700 uppercase">Sociaal</p>
+                            <p class="text-xs text-slate-500 mt-1">Klantvertrouwen</p>
+                        </div>
+                        <div class="bg-purple-100 border border-purple-200 rounded-xl p-3 text-center">
+                            <p class="text-xs font-bold text-purple-700 uppercase">Menselijk</p>
+                            <p class="text-xs text-slate-500 mt-1">Welzijn & retentie</p>
+                        </div>
+                    </div>
+                    <p class="text-center text-xs text-purple-600 font-semibold mt-2">= Perspectief Impact / Holistische Waarde</p>
+                </div>
+            </div>
+
+            <p class="text-slate-600 text-base leading-relaxed">
+                De strategy map maakt de werking van het business model zichtbaar en toetsbaar. Ze toont niet alleen <em>wat</em> de organisatie wil bereiken, maar ook <em>waarom</em> bepaalde investeringen in people, data en cultuur leiden tot betere processen, meer klantwaarde en uiteindelijk duurzame impact op alle zes de kapitalen.
+            </p>
+        </div>
+
+
+        <!-- SECTIE 4: VAN STRATEGY MAP NAAR MANAGEMENT DASHBOARD -->
+        <div class="section-card mb-10">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="bg-slate-700 text-white px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-widest">04</span>
+                <h2 class="text-2xl font-bold text-slate-800">Van Strategy Map naar Management Dashboard</h2>
+            </div>
+
+            <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                Een strategy map beschrijft de <em>logica</em> van de strategie. Maar om een strategie ook te <strong class="text-slate-800">besturen</strong>, moeten de doelstellingen meetbaar worden gemaakt. Voeg je KPIs, targets en initiatieven toe aan iedere doelstelling, dan ontstaat een <strong class="text-slate-800">Balanced Scorecard</strong> — een volledig managementdashboard zoals te zien in het Intrafocus-voorbeeld hierboven.
+            </p>
+
+            <!-- Leading vs Lagging -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
+                <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="bg-emerald-500 rounded-full w-3 h-3"></div>
+                        <h3 class="font-bold text-emerald-800 text-lg">Leading Indicators</h3>
+                    </div>
+                    <p class="text-slate-600 text-base leading-relaxed mb-4">
+                        Meten de <strong>oorzaken</strong> van toekomstig succes. Ze geven vroegtijdig een signaal of de strategie op koers ligt.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-start gap-2"><span class="text-emerald-500 font-bold mt-0.5">→</span> % medewerkers met adviestraining afgerond</li>
+                        <li class="flex items-start gap-2"><span class="text-emerald-500 font-bold mt-0.5">→</span> % rapportages geautomatiseerd</li>
+                        <li class="flex items-start gap-2"><span class="text-emerald-500 font-bold mt-0.5">→</span> Tijdigheid van MIS-output na periode</li>
+                    </ul>
+                    <p class="text-xs text-emerald-600 font-semibold mt-4 uppercase tracking-wide">Perspectief: Basis & Proces</p>
+                </div>
+
+                <div class="bg-purple-50 border border-purple-200 rounded-2xl p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="bg-purple-500 rounded-full w-3 h-3"></div>
+                        <h3 class="font-bold text-purple-800 text-lg">Lagging Indicators</h3>
+                    </div>
+                    <p class="text-slate-600 text-base leading-relaxed mb-4">
+                        Meten het <strong>resultaat</strong> van de strategie. Ze bevestigen achteraf of de beoogde waarde is gerealiseerd.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-start gap-2"><span class="text-purple-500 font-bold mt-0.5">→</span> Klanttevredenheidsscore (NPS)</li>
+                        <li class="flex items-start gap-2"><span class="text-purple-500 font-bold mt-0.5">→</span> % klanten met proactief adviesgesprek</li>
+                        <li class="flex items-start gap-2"><span class="text-purple-500 font-bold mt-0.5">→</span> Medewerkersbetrokkenheid & retentie</li>
+                    </ul>
+                    <p class="text-xs text-purple-600 font-semibold mt-4 uppercase tracking-wide">Perspectief: Klant & Impact</p>
+                </div>
+            </div>
+
+            <!-- Samenvatting -->
+            <div class="bg-slate-800 rounded-2xl p-6 text-white">
+                <h3 class="font-bold text-lg mb-4">De opbouw in één overzicht</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                    <div class="bg-white/10 rounded-xl p-4">
+                        <p class="font-bold text-white mb-2">Strategy Map</p>
+                        <p class="text-slate-300">Beschrijft de oorzaak-gevolg logica: hoe input capitals via processen leiden tot output capitals.</p>
+                    </div>
+                    <div class="bg-white/10 rounded-xl p-4">
+                        <p class="font-bold text-white mb-2">+ KPIs & Targets</p>
+                        <p class="text-slate-300">Maakt iedere doelstelling meetbaar met leading en lagging indicatoren en concrete streefwaarden.</p>
+                    </div>
+                    <div class="bg-white/10 rounded-xl p-4">
+                        <p class="font-bold text-white mb-2">= Balanced Scorecard</p>
+                        <p class="text-slate-300">Een volledig managementdashboard waarmee je de voortgang van de strategie kunt monitoren en bijsturen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="mt-16 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm">
+            <p>&copy; Adviestraject &mdash; Strategy Map Visualisatie</p>
+        </footer>
+    </div>
+
+</body>
+</html>
